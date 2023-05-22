@@ -5,7 +5,7 @@ using TMPro;
 
 public class GameStartCountdownUI : MonoBehaviour
 {
-    private const string COUNTDOWN_POPUP = "CountdownPopup";
+    private const string NUMBER_POPUP = "NumberPopup";
 
     [SerializeField] private TextMeshProUGUI countdownText;
 
@@ -44,7 +44,7 @@ public class GameStartCountdownUI : MonoBehaviour
         if (previousCountdownNumber != countdownNumber)
         {
             previousCountdownNumber = countdownNumber;
-            animator.SetTrigger(COUNTDOWN_POPUP);
+            animator.SetTrigger(NUMBER_POPUP);
             SoundManager.Instance.PlayCountdownSound();
         }
     }

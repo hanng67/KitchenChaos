@@ -100,6 +100,11 @@ public class GameManager : MonoBehaviour
         return 1 - (gamePlayingTimer / gamePlayingTimerMax);
     }
 
+    public float GetGamePlayingTimerRemaining()
+    {
+        return gamePlayingTimer;
+    }
+
     public bool IsGameOver()
     {
         return state == State.GameOver;

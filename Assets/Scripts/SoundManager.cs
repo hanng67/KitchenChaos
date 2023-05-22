@@ -80,12 +80,12 @@ public class SoundManager : MonoBehaviour
 
     public void PlayCountdownSound()
     {
-        PlaySound(audioClipRefsSO.warning, Vector3.zero);
+        PlaySound(audioClipRefsSO.countdown, Vector3.zero);
     }
 
     public void PlayWarningSound(Vector3 position)
     {
-        PlaySound(audioClipRefsSO.stoveWarningSound, position);
+        PlaySound(audioClipRefsSO.warning, position);
     }
 
     public void ChangeVolume()

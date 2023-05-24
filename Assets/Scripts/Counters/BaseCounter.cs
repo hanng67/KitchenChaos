@@ -12,6 +12,11 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent
         OnAnyObjectPlacedHere = null;
     }
 
+    protected virtual void OnDestroy()
+    {
+        BaseCounter.ResetStaticData();
+    }
+
     [SerializeField] private Transform counterTopPoint;
 
     private KitchenObject kitchenObject;

@@ -6,7 +6,7 @@ public class MobileInputUI : MonoBehaviour
 {
     private void Start()
     {
-#if !UNITY_EDITOR
+#if !UNITY_EDITOR || !(UNITY_ANDROID || UNITY_IOS)
         gameObject.SetActive(Application.isMobilePlatform);
 #endif
     }

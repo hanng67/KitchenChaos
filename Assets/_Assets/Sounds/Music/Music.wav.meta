@@ -13,6 +13,15 @@ AudioImporter:
     conversionMode: 0
     preloadAudioData: 0
   platformSettingOverrides:
+    1:
+      serializedVersion: 2
+      loadType: 0
+      sampleRateSetting: 2
+      sampleRateOverride: 22050
+      compressionFormat: 1
+      quality: 0.19999999
+      conversionMode: 0
+      preloadAudioData: 0
     13:
       serializedVersion: 2
       loadType: 0

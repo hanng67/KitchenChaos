@@ -20,9 +20,9 @@ public class GameManager : MonoBehaviour
     }
 
     private State state;
-    private float countdownToStartTimer = 3f;
+    private float countdownToStartTimer = 1f;
     private float gamePlayingTimer = 0;
-    private float gamePlayingTimerMax = 60f * 3f;
+    private float gamePlayingTimerMax = 60f * 5f;
     private bool isGamePaused = false;
 
     private void Awake()
@@ -125,5 +125,11 @@ public class GameManager : MonoBehaviour
 
             OnGameUnPaused?.Invoke(this, EventArgs.Empty);
         }
+    }
+
+    public void TriggerStateCountdownToStart_TestMode()
+    {
+        state = State.CountdownToStart;
+        OnStateChanged?.Invoke(this, EventArgs.Empty);
     }
 }

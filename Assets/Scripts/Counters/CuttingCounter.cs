@@ -12,12 +12,6 @@ public class CuttingCounter : BaseCounter, IHasProgress
         OnAnyCut = null;
     }
 
-    protected override void OnDestroy()
-    {
-        base.OnDestroy();
-        CuttingCounter.ResetStaticData();
-    }
-
     public event EventHandler<IHasProgress.ProgressChangedEventArgs> OnProgressChanged;
     public event EventHandler OnCut;
     [SerializeField] private CuttingRecipeSO[] cuttingRecipeSOArray;

@@ -9,12 +9,6 @@ public class TrashCounter : BaseCounter
         OnAnyObjectTrashed = null;
     }
 
-    protected override void OnDestroy()
-    {
-        base.OnDestroy();
-        TrashCounter.ResetStaticData();
-    }
-
     public override void Interact(Player player)
     {
         if (player.HasKitchenObject())

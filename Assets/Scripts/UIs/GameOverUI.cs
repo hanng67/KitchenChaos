@@ -14,6 +14,10 @@ public class GameOverUI : MonoBehaviour
     {
         restartButton.onClick.AddListener(() =>
         {
+            BaseCounter.ResetStaticData();
+            CuttingCounter.ResetStaticData();
+            TrashCounter.ResetStaticData();
+            Player.ResetStaticData();
             Loader.Load(Loader.Scene.GameScene);
         });
 

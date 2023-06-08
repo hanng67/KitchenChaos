@@ -13,11 +13,6 @@ public class BaseCounter : NetworkBehaviour, IKitchenObjectParent
         OnAnyObjectPlacedHere = null;
     }
 
-    new protected virtual void OnDestroy()
-    {
-        BaseCounter.ResetStaticData();
-    }
-
     [SerializeField] private Transform counterTopPoint;
 
     private KitchenObject kitchenObject;

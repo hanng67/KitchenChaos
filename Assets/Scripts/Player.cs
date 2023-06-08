@@ -14,12 +14,7 @@ public class Player : NetworkBehaviour, IKitchenObjectParent
     public static void ResetStaticData()
     {
         OnAnyPlayerSpawned = null;
-    }
-
-    public override void OnDestroy()
-    {
-        base.OnDestroy();
-        ResetStaticData();
+        OnAnyPickedSomething = null;
     }
 
     public event EventHandler OnPickedSomething;

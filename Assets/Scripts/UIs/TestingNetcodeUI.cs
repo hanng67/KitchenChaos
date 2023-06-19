@@ -16,14 +16,12 @@ public class TestingNetcodeUI : MonoBehaviour
             Debug.Log("Starting Host");
             NetworkManager.Singleton.StartHost();
             Hide();
-            GameManager.Instance.TriggerStateCountdownToStart_TestMode();
         });
         startClientButton.onClick.AddListener(() =>
         {
             Debug.Log("Starting Client");
             NetworkManager.Singleton.StartClient();
             Hide();
-            GameManager.Instance.TriggerStateCountdownToStart_TestMode();
         });
     }
 

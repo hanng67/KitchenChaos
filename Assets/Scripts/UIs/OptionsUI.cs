@@ -58,7 +58,7 @@ public class OptionsUI : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.OnGameUnPaused += GameManager_OnGameUnPaused;
+        GameManager.Instance.OnLocalGameUnPaused += GameManager_OnLocalGameUnPaused;
 
         UpdateVisual();
 
@@ -66,7 +66,7 @@ public class OptionsUI : MonoBehaviour
         Hide();
     }
 
-    private void GameManager_OnGameUnPaused(object sender, System.EventArgs e)
+    private void GameManager_OnLocalGameUnPaused(object sender, System.EventArgs e)
     {
         Hide();
     }

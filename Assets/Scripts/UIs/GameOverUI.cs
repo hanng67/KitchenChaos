@@ -15,16 +15,17 @@ public class GameOverUI : MonoBehaviour
     {
         playAgainButton.onClick.AddListener(() =>
         {
-            NetworkManager.Singleton.Shutdown();
-            BaseCounter.ResetStaticData();
-            CuttingCounter.ResetStaticData();
-            TrashCounter.ResetStaticData();
-            Player.ResetStaticData();
-            Loader.Load(Loader.Scene.GameScene);
+            // NetworkManager.Singleton.Shutdown();
+            // BaseCounter.ResetStaticData();
+            // CuttingCounter.ResetStaticData();
+            // TrashCounter.ResetStaticData();
+            // Player.ResetStaticData();
+            // Loader.Load(Loader.Scene.GameScene);
         });
 
         mainMenuButton.onClick.AddListener(() =>
         {
+            NetworkManager.Singleton.Shutdown();
             Loader.Load(Loader.Scene.MainMenuScene);
         });
     }
